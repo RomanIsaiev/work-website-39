@@ -233,7 +233,7 @@ p {
 .header-title {
   text-align: center;
   font-family: Benzin-Semibold;
-  font-size: 29px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 34.8px */
@@ -1982,9 +1982,9 @@ p {
     url(../images/background-decorations/already/ellipse-01.svg),
     url(../images/background-decorations/already/ellipse-02.svg);
   background-repeat: no-repeat;
-  background-position: left 0 top 60px, right 0 bottom 100px, left 0 top 0,
-    right 0 bottom 0;
-  background-size: 99px 138px, 155px 84px, 100%, 100%;
+  background-position: left 0 top 60px, right 0 bottom 100px, right 0 top 0,
+    left 0 bottom 0;
+  background-size: 99px 138px, 155px 84px, 700px, 700px;
 }
 
 @media (min-device-pixel-ratio: 2),
