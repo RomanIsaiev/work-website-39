@@ -92,6 +92,15 @@ p {
   max-width: 375px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 54px;
+    padding-right: 54px;
+
+    max-width: 768px;
+  }
+}
+
 /* header */
 
 .header {
@@ -116,6 +125,34 @@ p {
       url(../images/background-decorations/header/money-02-mobile-2x.png),
       url(../images/background-decorations/header/ellipse-01.svg),
       url(../images/background-decorations/header/ellipse-02.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    /* max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; */
+
+    background-image: url(../images/background-decorations/header/money-01-tablet-1x.png),
+      url(../images/background-decorations/header/money-02-tablet-1x.png),
+      url(../images/background-decorations/header/ellipse-01.svg),
+      url(../images/background-decorations/header/ellipse-02.svg);
+    background-position: top 84px right 0, top 265px left 0, top 0 left 0,
+      top 0 right 0;
+
+    background-size: 288px 144px, 171px 235px, 319px 536px, 300px 527px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header {
+      background-image: url(../images/background-decorations/header/money-01-tablet-2x.png),
+        url(../images/background-decorations/header/money-02-tablet-2x.png),
+        url(../images/background-decorations/header/ellipse-01.svg),
+        url(../images/background-decorations/header/ellipse-02.svg);
+    }
   }
 }
 
@@ -263,6 +300,41 @@ p {
   margin-bottom: 140px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    max-width: 505px;
+    margin-bottom: 60px;
+  }
+
+  .header-pretitle {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .header-title {
+    font-size: 48px;
+  }
+
+  .header-subtitle {
+    font-size: 54px;
+
+    margin-bottom: 110px;
+  }
+
+  .earn-container {
+    position: absolute;
+    top: 299px;
+    right: 60px;
+
+    max-width: 260px;
+  }
+
+  .earn-text {
+    font-size: 26px;
+    max-width: 215px;
+  }
+}
+
 /* header-list */
 
 .header-list {
@@ -333,6 +405,15 @@ p {
   background: linear-gradient(90deg, #c50082 0%, #f641ab 50.5%, #c50082 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .header-list {
+    grid-column-gap: 5px;
+    grid-row-gap: 0;
+
+    margin-bottom: 20px;
+  }
+}
+
 /* personal-trajectory */
 
 .personal-trajectory {
@@ -355,6 +436,27 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .personal-trajectory {
+    padding-top: 75px;
+    padding-bottom: 100px;
+
+    background-image: url(../images/background-decorations/personal/money-01-tablet-1x.png),
+      url(../images/background-decorations/personal/ellipse-01-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 70px, left 50px top 0;
+    background-size: 167px 193px, contain;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .personal-trajectory {
+      background-image: url(../images/background-decorations/personal/money-01-tablet-2x.png);
+    }
+  }
+}
+
 .personal-trajectory .container {
   position: relative;
 
@@ -364,6 +466,10 @@ p {
 .personal-author-image {
   margin-left: auto;
   margin-right: auto;
+}
+
+.personal-author-tablet {
+  display: none;
 }
 
 /* personal-wrapper */
@@ -461,6 +567,67 @@ p {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .personal-author-image {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .personal-trajectory .container {
+    position: static;
+
+    height: 204px;
+  }
+
+  .personal-wrapper {
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    transform: translate(0);
+
+    max-width: 522px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 40px 60px;
+    border-radius: 7px;
+    border: 1px solid #ffd676;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(255, 221, 85, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .personal-title {
+    text-align: left;
+    margin-bottom: 7px;
+  }
+
+  .personal-subtitle {
+    text-align: left;
+  }
+
+  .personal-author {
+    text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .personal-text {
+    text-align: left;
+  }
+
+  .personal-author-tablet {
+    display: block;
+
+    position: absolute;
+    top: 40px;
+    right: 21px;
+  }
+}
+
 /* how-usually */
 
 .how-usually {
@@ -473,6 +640,16 @@ p {
   background-size: 250px;
 }
 
+@media screen and (min-width: 768px) {
+  .how-usually {
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    background-position: left 0 top 0;
+    background-size: 250px;
+  }
+}
+
 .usually-title {
   color: #fff;
   text-align: center;
@@ -483,13 +660,20 @@ p {
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
 
+  max-width: 272px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: 40px;
 }
 
 .usually-title span {
-  background: var(
-    --Linear,
-    linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%)
+  background: linear-gradient(
+    92deg,
+    #dfb039 8.51%,
+    #ffda78 54.63%,
+    #dfb039 97.36%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -522,6 +706,8 @@ p {
   padding: 20px 25px;
   max-width: 315px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .usually-list .list-item span {
@@ -536,10 +722,34 @@ p {
   transform: translate(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  .usually-title {
+    font-size: 32px;
+    max-width: 280px;
+  }
+
+  .usually-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  .usually-list .list-item {
+    position: relative;
+
+    padding: 20px 18px;
+    max-width: 300px;
+    margin: 0;
+  }
+}
+
 /* how-we */
 
 .how-we {
-  padding-top: 50px;
   padding-bottom: 60px;
 
   background-image: url(../images/background-decorations/how-we/ellipse-01.svg);
@@ -549,9 +759,10 @@ p {
 }
 
 .how-we .container {
+  padding-top: 50px;
   background-image: url(../images/background-decorations/how-we/how-we-mobile-1x.png);
   background-repeat: no-repeat;
-  background-position: right 0 top -20px;
+  background-position: right 0 top 20px;
   background-size: 138px 139px;
 }
 
@@ -560,6 +771,32 @@ p {
   (min-resolution: 2dppx) {
   .how-we .container {
     background-image: url(../images/background-decorations/how-we/how-we-mobile-2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-we {
+    padding-bottom: 50px;
+
+    background-image: url(../images/background-decorations/how-we/ellipse-01.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 top -30px;
+    background-size: 200px;
+  }
+
+  .how-we .container {
+    background-image: url(../images/background-decorations/how-we/how-we-tablet-1x.png);
+    background-repeat: no-repeat;
+    background-position: right 180px top -20px;
+    background-size: 138px 139px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .how-we .container {
+      background-image: url(../images/background-decorations/how-we/how-we-tablet-2x.png);
+    }
   }
 }
 
@@ -599,6 +836,11 @@ p {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 9.2px 0px rgba(255, 214, 118, 0.5);
 
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 20px;
 }
 
@@ -613,6 +855,16 @@ p {
   left: 50%;
 
   transform: translate(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .how-we-title {
+    font-size: 32px;
+  }
+
+  .how-we-list {
+    flex-direction: row;
+  }
 }
 
 /* you-heard */
@@ -651,6 +903,27 @@ p {
   .you-heard .container {
     background-image: url(../images/background-decorations/you-heard/heard-left-mobile-2x.png),
       url(../images/background-decorations/you-heard/heard-right-mobile-2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .you-heard {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: right 0 top 0, right 0 bottom 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .you-heard {
+      background-image: url(../images/background-decorations/you-heard/ellipse-01.svg),
+        url(../images/background-decorations/you-heard/coins-mobile-2x.png);
+    }
+  }
+
+  .you-heard .container {
+    background-position: left 180px top -6px, right 180px top -6px;
   }
 }
 
@@ -733,6 +1006,10 @@ p {
   font-weight: 400;
   line-height: 105%;
   letter-spacing: -0.32px;
+
+  max-width: 312px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 40px;
 }
@@ -817,6 +1094,24 @@ p {
   letter-spacing: -0.32px;
 }
 
+@media screen and (min-width: 768px) {
+  .you-heard-title {
+    font-size: 32px;
+
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .you-heard-desc {
+    max-width: 410px;
+  }
+
+  .you-heard-exp {
+    max-width: 421px;
+  }
+}
+
 /* possible-wrapper */
 
 .possible-wrapper {
@@ -869,6 +1164,29 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .you-heard-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+    margin-bottom: 60px;
+  }
+
+  .you-heard-list .list-item:nth-child(1) {
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .you-heard-list .list-item:nth-child(2) {
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* for-whom */
