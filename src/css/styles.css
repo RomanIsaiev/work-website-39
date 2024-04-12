@@ -130,10 +130,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .header {
-    /* max-width: 768px;
-    margin-left: auto;
-    margin-right: auto; */
-
     background-image: url(../images/background-decorations/header/money-01-tablet-1x.png),
       url(../images/background-decorations/header/money-02-tablet-1x.png),
       url(../images/background-decorations/header/ellipse-01.svg),
@@ -910,7 +906,7 @@ p {
   .you-heard {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-position: right 0 top 0, right 0 bottom 0;
+    background-position: right 0 top -150px, right 0 bottom 0;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -1200,6 +1196,13 @@ p {
   background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+  .for-whom {
+    background-size: 1200px;
+    background-position: right 50% bottom 0;
+  }
+}
+
 .for-whom-title {
   color: #fff;
   text-align: center;
@@ -1242,6 +1245,11 @@ p {
   padding: 10px 20px 20px 20px;
   border-radius: 20px;
   background: #fff;
+
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .for-whom-list .for-whom-image {
@@ -1278,32 +1286,93 @@ p {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .for-whom-title {
+    font-size: 32px;
+    max-width: 475px;
+  }
+
+  .for-whom-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+
+  .for-whom-list .list-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /* about-author */
 
 .about-author {
   padding-top: 50px;
   padding-bottom: 60px;
 
-  background-image: url(../images/background-decorations/about-author/ellipse-01.svg),
-    url(../images/background-decorations/personal/money-01-mobile-1x.png),
+  background-image: url(../images/background-decorations/personal/money-01-mobile-1x.png),
     url(../images/background-decorations/about-author/ellipse-02.svg),
     url(../images/background-decorations/about-author/background-fire-mobile-1x.png),
     url(../images/background-decorations/about-author/ellipse-03.svg);
   background-repeat: no-repeat;
-  background-position: left 50% top 0, left 0 top 450px, right 0 top 500px,
-    right 0 bottom 500px, left 0 bottom 180px;
-  background-size: 528px 583px, 99px 138px, 712px, 103px 139px, 800px;
+  background-position: left 0 top 450px, right 0 top 500px, right 0 bottom 500px,
+    left 0 bottom 180px;
+  background-size: 99px 138px, 712px, 103px 139px, 800px;
+}
+
+.about-author .container {
+  background-image: url(../images/background-decorations/about-author/ellipse-01.svg);
+  background-repeat: no-repeat;
+  background-position: left 50% top 0;
+  background-size: 408px 463px;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .about-author {
-    background-image: url(../images/background-decorations/about-author/ellipse-01.svg),
-      url(../images/background-decorations/personal/money-01-mobile-2x.png),
+    background-image: url(../images/background-decorations/personal/money-01-mobile-2x.png),
       url(../images/background-decorations/about-author/ellipse-02.svg),
       url(../images/background-decorations/about-author/background-fire-mobile-2x.png),
       url(../images/background-decorations/about-author/ellipse-03.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-author {
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/background-decorations/personal/money-01-tablet-1x.png),
+      url(../images/background-decorations/about-author/ellipse-02.svg),
+      url(../images/background-decorations/about-author/background-fire-mobile-1x.png),
+      url(../images/background-decorations/about-author/ellipse-03.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 450px, right 0 top 500px,
+      right 0 bottom 420px, left 0 bottom 180px;
+    background-size: 167px 193px, 712px, 103px 139px, 800px;
+  }
+
+  .about-author .container {
+    background-image: url(../images/background-decorations/about-author/ellipse-01.svg);
+    background-repeat: no-repeat;
+    background-position: left 5% top 0;
+    background-size: 408px 463px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-author {
+      background-image: url(../images/background-decorations/personal/money-01-tablet-2x.png),
+        url(../images/background-decorations/about-author/ellipse-02.svg),
+        url(../images/background-decorations/about-author/background-fire-mobile-2x.png),
+        url(../images/background-decorations/about-author/ellipse-03.svg);
+    }
   }
 }
 
@@ -1446,6 +1515,38 @@ p {
   transform: translate(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  .author-box {
+    margin-bottom: 0;
+  }
+
+  .about-author-title {
+    font-size: 32px;
+  }
+
+  .about-author-container {
+    position: relative;
+
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 50px;
+  }
+
+  .author-wrapper {
+    position: absolute;
+    left: 25%;
+  }
+
+  .achievement-list {
+    padding-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 /* .production-exp */
 
 .production-exp {
@@ -1519,6 +1620,11 @@ p {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.07);
 
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: 40px;
 }
 
@@ -1582,6 +1688,23 @@ p {
   letter-spacing: -0.28px;
 }
 
+@media screen and (min-width: 768px) {
+  .position-wrapper {
+    position: relative;
+
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.07);
+
+    max-width: 545px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 40px;
+  }
+}
+
 /* knowledge-container */
 
 .knowledge-title {
@@ -1640,6 +1763,9 @@ p {
     url(../images/background-decorations/steps/ellipse-01.svg);
   background-repeat: no-repeat;
   background-position: left 0 top 50px, right 0 top 500px, left 0 top 950px;
+}
+
+@media screen and (min-width: 768px) {
 }
 
 .steps .container {
@@ -1729,7 +1855,7 @@ p {
   content: '';
   display: block;
 
-  width: 315px;
+  width: 100%;
   height: 1px;
 
   margin: 30px auto;
@@ -1796,6 +1922,62 @@ p {
   max-width: 240px;
 }
 
+.steps-button {
+  display: block;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 20px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #c50082 0%, #f641ab 50.5%, #c50082 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .steps-price {
+    position: absolute;
+    right: 180px;
+    top: 165px;
+  }
+
+  .steps-title {
+    font-size: 32px;
+    max-width: 525px;
+  }
+
+  .steps-subtitle {
+    font-size: 22px;
+    max-width: 345px;
+    margin-bottom: 80px;
+  }
+
+  .steps-list {
+    max-width: 545px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .steps-list .item-text {
+    font-size: 18px;
+    max-width: 300px;
+  }
+
+  .steps-button {
+    max-width: 545px;
+  }
+}
+
 /* course-program */
 
 .course-program {
@@ -1844,6 +2026,20 @@ p {
   -webkit-text-fill-color: transparent;
 
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .course-program {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-position: left 0 bottom 250px, right 0 bottom 100px,
+      left 0 bottom 150px, right 0 bottom 0;
+  }
+
+  .program-title {
+    font-size: 32px;
+  }
 }
 
 /* faq-01 */
@@ -1943,7 +2139,6 @@ p {
 .symbol-image {
   display: block;
 
-  /* transform: translate(-50%, -50%); */
   transition: transform 250ms linear;
 }
 
@@ -2025,17 +2220,56 @@ p {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .question {
+    max-width: 545px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 10px;
+  }
+
+  .question-attention {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eb309e;
+    background: rgba(255, 255, 255, 0.05);
+
+    max-width: 545px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .question-name {
+    color: #fff;
+    font-family: 'Futura PT';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+
+    max-width: 310px;
+  }
+}
+
 /* singup */
 
 .singup-wrapper {
   position: relative;
+
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   padding: 50px 20px 30px 20px;
   border-radius: 10px;
   border: 1px solid #ffd676;
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0px 0px 10px 0px rgba(255, 214, 118, 0.5);
-  backdrop-filter: blur(10px);
 }
 
 .program-ticket {
@@ -2054,6 +2288,11 @@ p {
   font-weight: 400;
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
+
+  max-width: 230px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   background: linear-gradient(
     92deg,
@@ -2078,6 +2317,11 @@ p {
   line-height: 105%;
   letter-spacing: -0.3px;
 
+  max-width: 275px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: 30px;
 }
 
@@ -2101,9 +2345,17 @@ p {
   padding: 20px;
   max-width: 275px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   border-radius: 7px;
   background: linear-gradient(90deg, #c50082 0%, #f641ab 50.5%, #c50082 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .singup-wrapper {
+    max-width: 545px;
+  }
 }
 
 /* how-mentoring */
@@ -2127,6 +2379,10 @@ p {
   font-weight: 400;
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
+
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 40px;
 }
@@ -2175,6 +2431,20 @@ p {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .mentoring-title {
+    font-size: 32px;
+    max-width: 545px;
+  }
+
+  .mentoring-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
 /* you-get */
 
 .you-get {
@@ -2221,6 +2491,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
 
   grid-row-gap: 20px;
 }
@@ -2289,6 +2563,13 @@ p {
   letter-spacing: -0.3px;
 }
 
+@media screen and (min-width: 768px) {
+  .you-get-title {
+    font-size: 32px;
+    max-width: 345px;
+  }
+}
+
 /* they-already */
 
 .they-already {
@@ -2310,7 +2591,45 @@ p {
   (min-resolution: 2dppx) {
   .they-already {
     background-image: url(../images/background-decorations/personal/money-01-mobile-2x.png),
-      url(../images/background-decorations/header/money-01-mobile-2x.png);
+      url(../images/background-decorations/header/money-01-mobile-2x.png),
+      url(../images/background-decorations/already/ellipse-01.svg),
+      url(../images/background-decorations/already/ellipse-02.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .they-already {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/background-decorations/header/money-01-mobile-1x.png),
+      url(../images/background-decorations/already/ellipse-01.svg),
+      url(../images/background-decorations/already/ellipse-02.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 100px, right 0 top 0, left 0 bottom 0;
+    background-size: 155px 84px, 700px, 700px;
+  }
+
+  .they-already .container {
+    background-image: url(../images/background-decorations/already/money-01-tablet-1x.png);
+    background-repeat: no-repeat;
+    background-position: left 140px top 0;
+    background-size: 137px 138px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .they-already {
+      background-image: url(../images/background-decorations/personal/money-01-mobile-2x.png),
+        url(../images/background-decorations/header/money-01-mobile-2x.png),
+        url(../images/background-decorations/already/ellipse-01.svg),
+        url(../images/background-decorations/already/ellipse-02.svg);
+    }
+
+    .they-already .container {
+      background-image: url(../images/background-decorations/already/money-01-tablet-2x.png);
+    }
   }
 }
 
@@ -2323,6 +2642,10 @@ p {
   font-weight: 400;
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
+
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 40px;
 }
@@ -2405,6 +2728,22 @@ p {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .they-already-title {
+    font-size: 32px;
+    max-width: 445px;
+  }
+
+  .they-already-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-bottom: 30px;
+  }
+}
+
 /* question */
 
 .section-questions {
@@ -2422,10 +2761,14 @@ p {
   line-height: 120%; /* 28.8px */
   text-transform: uppercase;
 
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: 40px;
 }
 
-.questions-title::after {
+.faq-two::before {
   content: '';
   display: block;
 
@@ -2433,6 +2776,7 @@ p {
   height: 1px;
 
   margin-top: 40px;
+  margin-bottom: 30px;
 
   background: #5d5d5d;
 }
@@ -2515,6 +2859,24 @@ p {
 
 .question-two.open .symbol-image {
   transform: rotate(135deg);
+}
+
+@media screen and (min-width: 768px) {
+  .questions-title {
+    font-size: 32px;
+    max-width: 415px;
+  }
+
+  .question-name-two {
+    font-size: 18px;
+    max-width: 315px;
+  }
+
+  .content-text-two {
+    font-size: 16px;
+
+    max-width: 545px;
+  }
 }
 
 /* footer */
