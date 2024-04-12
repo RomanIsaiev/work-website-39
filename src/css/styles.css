@@ -1380,8 +1380,8 @@ p {
 
 .open-close {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   width: 25px;
   height: 25px;
@@ -1390,18 +1390,14 @@ p {
   background: #eb309e;
 }
 
-.symbol {
-  color: #fff;
-  font-family: 'Futura PT';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 100%;
-  letter-spacing: -0.3px;
+.symbol-image {
+  display: block;
+
+  /* transform: translate(-50%, -50%); */
   transition: transform 250ms linear;
 }
 
-.question.open .symbol {
+.question.open .symbol-image {
   transform: rotate(135deg);
 }
 
@@ -1929,7 +1925,7 @@ p {
   max-width: 260px;
 }
 
-.question-two.open .symbol {
+.question-two.open .symbol-image {
   transform: rotate(135deg);
 }
 
