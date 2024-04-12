@@ -96,6 +96,31 @@ p {
 
 .header {
   padding-top: 20px;
+
+  background-image: url(../images/background-decorations/header/money-01-mobile-1x.png),
+    url(../images/background-decorations/header/money-02-mobile-1x.png),
+    url(../images/background-decorations/header/ellipse-01.svg),
+    url(../images/background-decorations/header/ellipse-02.svg);
+  background-repeat: no-repeat;
+  background-position: top 84px right 0, top 265px left 0, top 0 left 0,
+    top 80px right 0;
+
+  background-size: 155px 84px, 119px 150px, 319px 536px, 300px 627px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/background-decorations/header/money-01-mobile-2x.png),
+      url(../images/background-decorations/header/money-02-mobile-2x.png),
+      url(../images/background-decorations/header/ellipse-01.svg),
+      url(../images/background-decorations/header/ellipse-02.svg);
+  }
+}
+
+.header .container {
+  position: relative;
 }
 
 .header-start {
@@ -152,6 +177,44 @@ p {
 
 .header-wrapper-subtitle span {
   font-weight: 500;
+}
+
+.earn-container {
+  position: absolute;
+  top: 270px;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 7px;
+  background: #eb309e;
+
+  max-width: 200px;
+  width: 100%;
+
+  transform: rotate(-5deg);
+}
+
+.earn-text {
+  color: #ffb1df;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+
+  max-width: 148px;
+  width: 100%;
+}
+
+.earn-text span {
+  color: #fff;
 }
 
 .header-pretitle {
@@ -275,6 +338,21 @@ p {
 .personal-trajectory {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  background-image: url(../images/background-decorations/personal/ellipse-01.svg),
+    url(../images/background-decorations/personal/money-01-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top -40px, left 0 top 370px;
+  background-size: 528px 583px, 99px 138px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .personal-trajectory {
+    background-image: url(../images/background-decorations/personal/ellipse-01.svg),
+      url(../images/background-decorations/personal/money-01-mobile-2x.png);
+  }
 }
 
 .personal-trajectory .container {
@@ -293,7 +371,12 @@ p {
 .personal-wrapper {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+
+  transform: translate(-50%);
+
+  max-width: 315px;
+  width: 100%;
 
   padding: 20px;
   border-radius: 7px;
@@ -383,6 +466,11 @@ p {
 .how-usually {
   padding-top: 40px;
   padding-bottom: 50px;
+
+  background-image: url(../images/background-decorations/usually/usually.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 100px;
+  background-size: 250px;
 }
 
 .usually-title {
@@ -453,6 +541,26 @@ p {
 .how-we {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/how-we/ellipse-01.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+  background-size: 250px;
+}
+
+.how-we .container {
+  background-image: url(../images/background-decorations/how-we/how-we-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top -20px;
+  background-size: 138px 139px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .how-we .container {
+    background-image: url(../images/background-decorations/how-we/how-we-mobile-2x.png);
+  }
 }
 
 .how-we-title {
@@ -512,6 +620,38 @@ p {
 .you-heard {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/you-heard/ellipse-01.svg),
+    url(../images/background-decorations/you-heard/coins-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 0, right 0 bottom 235px;
+  background-size: 1157px, 227px 297px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .you-heard {
+    background-image: url(../images/background-decorations/you-heard/ellipse-01.svg),
+      url(../images/background-decorations/you-heard/coins-mobile-2x.png);
+  }
+}
+
+.you-heard .container {
+  background-image: url(../images/background-decorations/you-heard/heard-left-mobile-1x.png),
+    url(../images/background-decorations/you-heard/heard-right-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: left 14px top -6px, right 14px top -6px;
+  background-size: 80px 79px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .you-heard .container {
+    background-image: url(../images/background-decorations/you-heard/heard-left-mobile-2x.png),
+      url(../images/background-decorations/you-heard/heard-right-mobile-2x.png);
+  }
 }
 
 .you-heard-title {
@@ -736,6 +876,10 @@ p {
 .for-whom {
   padding-top: 60px;
   padding-bottom: 50px;
+
+  background-image: url(../images/background-decorations/for-whom/ellipse-01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .for-whom-title {
@@ -821,6 +965,28 @@ p {
 .about-author {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/about-author/ellipse-01.svg),
+    url(../images/background-decorations/personal/money-01-mobile-1x.png),
+    url(../images/background-decorations/about-author/ellipse-02.svg),
+    url(../images/background-decorations/about-author/background-fire-mobile-1x.png),
+    url(../images/background-decorations/about-author/ellipse-03.svg);
+  background-repeat: no-repeat;
+  background-position: left 50% top 0, left 0 top 450px, right 0 top 500px,
+    right 0 bottom 500px, left 0 bottom 180px;
+  background-size: 528px 583px, 99px 138px, 712px, 103px 139px, 800px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-author {
+    background-image: url(../images/background-decorations/about-author/ellipse-01.svg),
+      url(../images/background-decorations/personal/money-01-mobile-2x.png),
+      url(../images/background-decorations/about-author/ellipse-02.svg),
+      url(../images/background-decorations/about-author/background-fire-mobile-2x.png),
+      url(../images/background-decorations/about-author/ellipse-03.svg);
+  }
 }
 
 .about-author-title {
@@ -1029,11 +1195,19 @@ p {
 /* position-wrapper */
 
 .position-wrapper {
+  position: relative;
+
   padding: 20px 10px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.07);
 
   margin-bottom: 40px;
+}
+
+.position-fire {
+  position: absolute;
+  left: -20px;
+  bottom: -10px;
 }
 
 .position-title {
@@ -1142,6 +1316,43 @@ p {
 .steps {
   padding-top: 60px;
   padding-bottom: 50px;
+
+  background-image: url(../images/background-decorations/steps/ellipse-01.svg),
+    url(../images/background-decorations/steps/ellipse-02.svg),
+    url(../images/background-decorations/steps/ellipse-01.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 50px, right 0 top 500px, left 0 top 950px;
+}
+
+.steps .container {
+  position: relative;
+}
+
+.steps-price {
+  position: absolute;
+  right: 20px;
+  top: 112px;
+
+  transform: rotate(-6deg);
+
+  padding: 10px;
+  border-radius: 7px;
+  background: #eb309e;
+
+  max-width: 120px;
+  width: 100%;
+}
+
+.steps-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
 }
 
 .steps-title {
@@ -1272,6 +1483,27 @@ p {
 .course-program {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/course-program/money-01-mobile-1x.png),
+    url(../images/background-decorations/course-program/money-02-mobile-1x.png),
+    url(../images/background-decorations/course-program/ellipse-01.svg),
+    url(../images/background-decorations/course-program/ellipse-02.svg);
+
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 350px, right 0 bottom 0,
+    left 0 bottom 200px, right 0 bottom 0;
+  background-size: 95px 131px, 160px 84px, 221px 442px, 215px 430px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .course-program {
+    background-image: url(../images/background-decorations/course-program/money-01-mobile-2x.png),
+      url(../images/background-decorations/course-program/money-02-mobile-2x.png),
+      url(../images/background-decorations/course-program/ellipse-01.svg),
+      url(../images/background-decorations/course-program/ellipse-02.svg);
+  }
 }
 
 .program-title {
@@ -1478,12 +1710,22 @@ p {
 /* singup */
 
 .singup-wrapper {
+  position: relative;
+
   padding: 50px 20px 30px 20px;
   border-radius: 10px;
   border: 1px solid #ffd676;
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0px 0px 10px 0px rgba(255, 214, 118, 0.5);
   backdrop-filter: blur(10px);
+}
+
+.program-ticket {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+
+  transform: translate(-50%);
 }
 
 .singup-title {
@@ -1551,6 +1793,11 @@ p {
 .how-mentoring {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/how-mentoring/ellipse-01.svg),
+    url(../images/background-decorations/how-mentoring/ellipse-02.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, right 0 bottom 0;
 }
 
 .mentoring-title {
@@ -1615,6 +1862,11 @@ p {
 .you-get {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/you-get/ellipse-01.svg),
+    url(../images/background-decorations/you-get/ellipse-02.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, right 0 bottom 0;
 }
 
 .you-get-title {
@@ -1724,6 +1976,24 @@ p {
 .they-already {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-image: url(../images/background-decorations/personal/money-01-mobile-1x.png),
+    url(../images/background-decorations/header/money-01-mobile-1x.png),
+    url(../images/background-decorations/already/ellipse-01.svg),
+    url(../images/background-decorations/already/ellipse-02.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 60px, right 0 bottom 100px, left 0 top 0,
+    right 0 bottom 0;
+  background-size: 99px 138px, 155px 84px, 100%, 100%;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .they-already {
+    background-image: url(../images/background-decorations/personal/money-01-mobile-2x.png),
+      url(../images/background-decorations/header/money-01-mobile-2x.png);
+  }
 }
 
 .they-already-title {
