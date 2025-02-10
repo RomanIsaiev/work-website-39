@@ -52,6 +52,18 @@
   font-weight: 600;
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 body {
   margin: 0;
   background: #171717;
@@ -242,7 +254,7 @@ p {
   letter-spacing: -0.36px;
   text-transform: uppercase;
 
-  max-width: 148px;
+  max-width: 158px;
   width: 100%;
 }
 
@@ -327,7 +339,7 @@ p {
 
   .earn-text {
     font-size: 26px;
-    max-width: 215px;
+    max-width: 225px;
   }
 }
 
@@ -401,12 +413,45 @@ p {
   background: linear-gradient(90deg, #c50082 0%, #f641ab 50.5%, #c50082 100%);
 }
 
+.btn-link-container {
+  position: relative;
+}
+
+.free-btn-text {
+  position: absolute;
+  right: -20px;
+  bottom: -16px;
+
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+
+  transform: rotate(-5deg);
+
+  animation: pulseScale 2000ms infinite;
+}
+
 @media screen and (min-width: 768px) {
   .header-list {
     grid-column-gap: 5px;
     grid-row-gap: 0;
 
     margin-bottom: 20px;
+  }
+
+  .btn-link-container {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 

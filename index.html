@@ -9,11 +9,41 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '959029748745562');
+      fbq('track', 'PageView');
+    </script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <p class="header-start">СТАРТ 20 ТРАВНЯ</p>
+        <p class="header-start">
+          СТАРТ <span id="dateElement"></span> <span id="monthElement"></span>
+        </p>
         <div class="header-wrapper">
           <h2 class="header-wrapper-title">Преміальна Майстер-група</h2>
           <p class="header-wrapper-subtitle">
@@ -25,7 +55,7 @@
         <h1 class="header-title">затребуваний</h1>
         <p class="header-subtitle">Онлайн-курс</p>
         <div class="earn-container">
-          <p class="earn-text">та заробляйте <span>від $5 000</span></p>
+          <p class="earn-text">та заробляйте <span>від $5000-$10000</span></p>
         </div>
         <ul class="header-list list">
           <li class="list-item">
@@ -59,13 +89,16 @@
             /><span>Навіть без бази</span> підписників
           </li>
         </ul>
-        <a
-          class="header-button link"
-          href="https://t.me/bardadym_team"
-          target="_blank"
-          rel="nofollow"
-          >Приєднатись</a
-        >
+        <div class="btn-link-container">
+          <a
+            class="header-button link"
+            href="https://t.me/bardadym_team"
+            target="_blank"
+            rel="nofollow"
+            >Отримати персональний план</a
+          >
+          <p class="free-btn-text">Безкоштовно</p>
+        </div>
       </div>
     </header>
     <main>
@@ -285,13 +318,17 @@
               наставництва
             </p>
           </div>
-          <a
-            class="header-button link"
-            href="https://t.me/bardadym_team"
-            target="_blank"
-            rel="nofollow"
-            >Приєднатись</a
-          >
+
+          <div class="btn-link-container">
+            <a
+              class="header-button link"
+              href="https://t.me/bardadym_team"
+              target="_blank"
+              rel="nofollow"
+              >Отримати персональний план</a
+            >
+            <p class="free-btn-text">Безкоштовно</p>
+          </div>
         </div>
       </section>
       <section class="for-whom">
@@ -465,13 +502,16 @@
               </p>
             </li>
           </ul>
-          <a
-            class="header-button link"
-            href="https://t.me/bardadym_team"
-            target="_blank"
-            rel="nofollow"
-            >Приєднатись</a
-          >
+          <div class="btn-link-container">
+            <a
+              class="header-button link"
+              href="https://t.me/bardadym_team"
+              target="_blank"
+              rel="nofollow"
+              >Отримати персональний план</a
+            >
+            <p class="free-btn-text">Безкоштовно</p>
+          </div>
         </div>
       </section>
       <section class="about-author">
@@ -625,13 +665,16 @@
             <p class="knowledge-desc">
               з абсолютно різними чеками: від $5-7 до $6500 за курс
             </p>
-            <a
-              class="header-button link"
-              href="https://t.me/bardadym_team"
-              target="_blank"
-              rel="nofollow"
-              >Приєднатись</a
-            >
+            <div class="btn-link-container">
+              <a
+                class="header-button link"
+                href="https://t.me/bardadym_team"
+                target="_blank"
+                rel="nofollow"
+                >Отримати персональний план</a
+              >
+              <p class="free-btn-text">Безкоштовно</p>
+            </div>
           </div>
         </div>
       </section>
@@ -906,13 +949,16 @@
               </div>
             </li>
           </ul>
-          <a
-            class="steps-button link"
-            href="https://t.me/bardadym_team"
-            target="_blank"
-            rel="nofollow"
-            >Приєднатись</a
-          >
+          <div class="btn-link-container">
+            <a
+              class="header-button link"
+              href="https://t.me/bardadym_team"
+              target="_blank"
+              rel="nofollow"
+              >Отримати персональний план</a
+            >
+            <p class="free-btn-text">Безкоштовно</p>
+          </div>
         </div>
       </section>
       <section class="course-program">
@@ -1538,7 +1584,7 @@
               без танців в сторіс, технічних складнощів та команди, навіть якщо
               у вас немає бази підписників
             </p>
-            <a class="singup-button link" href="">Приєднатись</a>
+            <a class="singup-button link" href="">Отримати персональний план</a>
           </div> -->
         </div>
       </section>
@@ -1656,7 +1702,7 @@
                   width="36"
                   height="36"
               /></picture>
-              <p class="item-number">70+</p>
+              <p class="item-number">100+</p>
               <p class="item-text">відео-уроків</p>
             </li>
             <li class="list-item">
@@ -1676,7 +1722,7 @@
                   width="36"
                   height="36"
               /></picture>
-              <p class="item-number">90+</p>
+              <p class="item-number">30+</p>
               <p class="item-text">додаткових матеріалів</p>
             </li>
             <li class="list-item">
@@ -1716,7 +1762,7 @@
                   width="36"
                   height="36"
               /></picture>
-              <p class="item-number">8-12</p>
+              <p class="item-number">8-16</p>
               <p class="item-text">
                 тижнів персонального наставництва по роботі над вашими проектами
               </p>
@@ -1981,7 +2027,7 @@
                 </li>
                 <li class="list-item">
                   Термін навчання та підпримки
-                  <span class="accent">2 місяці</span>
+                  <span class="accent">3 місяці</span>
                 </li>
                 <li class="list-item">VIP чат в telegram</li>
                 <li class="list-item">
@@ -2105,7 +2151,7 @@
                 </li>
                 <li class="list-item">
                   Термін навчання та підпримки
-                  <span class="accent-two">2 місяці</span>
+                  <span class="accent-two">3+1 місяці</span>
                 </li>
                 <li class="list-item">VIP чат в telegram + персональний чат</li>
                 <li class="list-item">
@@ -2691,13 +2737,16 @@
               /></picture>
             </li>
           </ul>
-          <a
-            class="header-button link"
-            href="https://t.me/bardadym_team"
-            target="_blank"
-            rel="nofollow"
-            >Приєднатись</a
-          >
+          <div class="btn-link-container">
+            <a
+              class="header-button link"
+              href="https://t.me/bardadym_team"
+              target="_blank"
+              rel="nofollow"
+              >Отримати персональний план</a
+            >
+            <p class="free-btn-text">Безкоштовно</p>
+          </div>
         </div>
       </section>
       <section class="section-questions">
@@ -2856,6 +2905,7 @@
         </a>
       </div>
     </footer>
+    <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
   </body>
